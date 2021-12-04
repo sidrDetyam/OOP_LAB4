@@ -117,7 +117,7 @@ CSVParser<Types...>::CSVParser(const std::string &file_name,
 
     std::string unused_line;
     for (size_t i = 0; i < skip_lines; ++i) {
-        input_file_.getline(unused_line, line_delimiter_, escaping_char_);
+        input_file_.getline(unused_line, line_delimiter_, line_delimiter_);
     }
 }
 
